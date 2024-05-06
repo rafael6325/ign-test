@@ -6,52 +6,93 @@
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     .news-card {
-      width: 30%;
-      margin-bottom: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      height: 400px;
+      margin-bottom: 3px;
+      padding: 3px;
     }
 
     .news-card img {
       width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-bottom: 10px;
+      height: 500px;
+      border-radius: 6px;
+      margin-bottom: 2px;
+      padding: 2px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .news-card h2 {
       font-size: 18px;
-      margin-bottom: 10px;
+      margin-bottom: 2px;
     }
 
     .news-card p {
-      font-size: 14px;
+      font-size: 18px;
       color: #666;
+    }
+    
+    .head-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
+  <div class="head-menu">
+    <img src="ign_brasil.jpg" width="300px" height="200px" alt="ign_brasil">
+    <nav>
+      <a href="">PS5</a>
+      <a href="">Xbox Series X/S</a>
+      <a href="">Switch<a>
+      <a href="">Tech</a>
+      <a href="">Mobile</a>
+      <a href="">Ver mais</a>
+      <button>
+        <img src="icons8-pesquisar-100.png" width="20px" height="20px" alt="pesquisar">
+      </button>
+    </nav>
+  </div>
   <div class="container">
     <div class="news-card">
-      <img src="news1.jpg" alt="News 1">
-      <h2>Breaking News 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo nec nunc lacinia, a aliquet nisl tincidunt.</p>
+      <img class="img-card" src="tom-cruise-top-gun-1_gc7t.560.webp" alt="tom-cruise-top-gun-1_gc7t">
+      <h2>Top gun: Maverick</h2>
+      <p>Review do filme, muita ação a lá top gun</p>
     </div>
     <div class="news-card">
-      <img src="news2.jpg" alt="News 2">
-      <h2>Breaking News 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo nec nunc lacinia, a aliquet nisl tincidunt.</p>
+      <img class="img-card" src="fifa-22-1_w9mh.560.webp" alt="fifa-22-1_w9mh">
+      <h2>Fifa 22</h2>
+      <p>Nova bola com fisica melhorada</p>
     </div>
     <div class="news-card">
-      <img src="news3.jpg" alt="News 3">
-      <h2>Breaking News 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo nec nunc lacinia, a aliquet nisl tincidunt.</p>
+      <img class="img-card" src="jurassic-park-onde-assistir-os-filmes_teew.560.webp" alt="jurassic-park-onde-assistir-os-filmes_teew">
+      <h2>Jurassic Park</h2>
+      <p>ROAAAAAAAAAAAAARRRRRRRR</p>
+    </div>
+    <div class="news-card">
+      <img class="img-card" src="ps4-g61640c4d4_1920.jpg" height="300px" width="200px" alt="ps4-g61640c4d4_1920">
+      <h2>Playstation 4:</h2>
+      <p>Um monstro que se mantem de pé perante ao tempo ao apenas um peso de papel mordenoso?</p>
     </div>
   </div>
 </body>
